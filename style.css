@@ -9,3 +9,34 @@ main {
     flex: 1; /* Ocupa todo o espaço disponível */
 }
 
+@media (max-width: 576px) {
+    .carousel-caption h3 {
+        font-size: 16px; /* Reduz o tamanho do título */
+    }
+
+    .carousel-caption p {
+        font-size: 12px; /* Reduz o tamanho do texto */
+    }
+
+    .carousel-item img {
+        opacity: 0.75; /* Ajuste o valor conforme necessário */
+    }
+}
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {height: 450px}
+    
+/* Set gray background color and 100% height */
+.sidenav {
+  padding-top: 20px;
+  height: 100%;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+  .sidenav {
+    height: auto;
+    padding: 15px;
+  }
+  .row.content {height:auto;} 
+}
+
