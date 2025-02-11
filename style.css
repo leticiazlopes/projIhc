@@ -3,7 +3,15 @@ html, body {
     margin: 0;
     display: flex;
     flex-direction: column;
+    font-family: 'Atkinson Hyperlegible Next', sans-serif;
+    color: #a67868 !important;
 }
+
+.img-dark {
+  filter:saturate(10) !important;
+  /* Reduz o brilho (0% deixa a imagem preta) */
+}
+
 
 main {
     flex: 1; /* Ocupa todo o espaço disponível */
@@ -40,3 +48,110 @@ main {
   .row.content {height:auto;} 
 }
 
+
+.bg-info {
+  background-color: #a67868 !important;
+}
+
+.btn-outline-success {
+  color: #a67868;
+  border-color: #a67868;
+}
+
+.btn-outline-success:hover {
+  background-color: #a67868;
+  border-color: #a67868;
+}
+
+/* Alterando a cor primária do Bootstrap */
+:root {
+  --bs-primary: #a67868; /* Nova cor primária */
+}
+
+/* Botões */
+.btn-primary {
+  background-color: #a67868 !important;
+  border-color: #a67868 !important;
+}
+
+.btn-primary:hover {
+  background-color: #8c5c5c !important; /* Tom mais escuro ao passar o mouse */
+  border-color: #8c5c5c !important;
+}
+
+.btn-primary:sucess {
+  background-color: #8c5c5c !important; /* Tom mais escuro ao passar o mouse */
+  border-color: #8c5c5c !important;
+  color: #a67868;
+}
+/* Textos primários */
+.text-primary {
+  color: #a67868 !important;
+}
+
+/* Fundo primário */
+.bg-primary {
+  background-color: #a67868 !important;
+}
+
+/* Links ativos */
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show {
+  color: #a67868 !important;
+}
+
+/* Links no dropdown */
+.dropdown-item:hover {
+  background-color: #a67868 !important;
+  color: white !important;
+}
+
+.btn-outline-primary {
+  border-color: #a67868;
+  color: #8c5c5c;
+}
+
+.btn-outline-primary:hover {
+  border-color: #a67868;
+  background-color: #a67868;}
+
+/* Badges
+.badge-danger {
+  background-color: #a67868 !important;
+} */
+
+/* Footer */
+footer a.text-reset:hover {
+  color: #a67868 !important;
+}
+
+body {
+  color: #000 !important; /* Define a cor do texto como preto */
+}
+
+h3, h4, h5, h6, p, span {
+  color: #000 !important; /* Garante que todos os títulos e parágrafos fiquem pretos */
+}
+
+/* .btn {
+  color: white !important; /* Mantém o texto dos botões branco para contraste */
+/* / */ */
+.badge badge-danger {
+  color: white;
+}
+.badge {
+  color: white !important; /* Mantém o texto das badges branco */
+}
+
+a {
+  color: black; /* Define a cor dos links como preta */
+  text-decoration: none; /* Remove o sublinhado */
+}
+
+a:hover {
+  color: gray; /* Altera a cor ao passar o mouse */
+}
+.login-btn {
+    background-color: black;
+    color: white;
+}
